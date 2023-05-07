@@ -34,4 +34,4 @@ async def predict(input_tensor):
         output = model(input_tensor)
         _, predicted = torch.max(output.data, 1)
 
-    return predicted.item(), Model1.info_acc
+    return predicted.item()

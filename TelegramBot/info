@@ -1,0 +1,9 @@
+*Authors:*
+This bot was developed by MIPT students Olesya Korcheva and Julia Guseva.
+
+*Importance:*
+We hope that this bot will facilitate the analysis of histological data, since the application of deep learning algorithms to pathology images on entire slides can potentially increase the accuracy and efficiency of diagnostics.
+
+*Construction:*
+To train the neural network for this bot, a dataset was used: [Dataset](https://www.kaggle.com/competitions/histopathologic-cancer-detection/data)
+The neural network model and the source code of this bot can be found on GitHub: [Repository](https://github.com/okorch/project_AI_cancer)
