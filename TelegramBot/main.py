@@ -85,10 +85,10 @@ async def photo(message: types.Message):
 
     result = await config.predict(image)
     if result == 1:
-        text = 'Canser'
+        text = 'Cancer'
         await bot.send_message(chat_id=chat_id, text=text)
     else:
-        text = 'No canser'
+        text = 'No cancer'
         await bot.send_message(chat_id=chat_id, text=text)
 
 if __name__ == '__main__':

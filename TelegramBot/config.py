@@ -3,7 +3,6 @@ from PIL import Image
 import torchvision.transforms as transforms
 from TelegramBot import Model1
 
-
 async def process_photo(stream):
     '''
      Preprocesses the photo to be fed into the model for prediction.
