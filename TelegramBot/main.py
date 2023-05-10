@@ -78,7 +78,6 @@ async def photo(message: types.Message):
     '''
     chat_id = message.chat.id
     photos = message.photo[-1]
-    logging.info(f'{user_id} {user_full_name} {time.asctime()}')
     file = await photos.get_file()
     stream = await bot.download_file(file.file_path)
     image = await config.process_photo(stream)
