@@ -3,8 +3,9 @@ from aiogram.utils import executor, markdown
 from aiogram.types import ParseMode
 import time, logging
 import config
+from TelegramBot import secret_key
 
-TOKEN = '6066040431:AAH1dQUsLwu5icMLloR-46VHNwfbeRuB_S8'
+TOKEN = secret_key.TOKEN
 
 bot = Bot(token = TOKEN)
 dp = Dispatcher(bot)
@@ -77,6 +78,7 @@ async def photo(message: types.Message):
     '''
     chat_id = message.chat.id
     photos = message.photo[-1]
+    logging.info(f'{user_id} {user_full_name} {time.asctime()}')
     file = await photos.get_file()
     stream = await bot.download_file(file.file_path)
     image = await config.process_photo(stream)
